@@ -2,6 +2,7 @@ import createElement from "./virtualdom/createElement";
 import render from "./virtualdom/render";
 import mount from "./virtualdom/mount";
 import diff from "./virtualdom/diff";
+import mewFlip from "./assets/mewFlip.webp";
 import "./main.css";
 
 const createVirtualApp = (count) =>
@@ -13,8 +14,8 @@ const createVirtualApp = (count) =>
     children: [
       createElement("img", {
         attrs: {
-          id: "mew-giphy",
-          src: "https://media.giphy.com/media/jOQ91yKFFdSgu7HZqh/giphy.gif",
+          id: "mew",
+          src: mewFlip,
         },
       }),
       `🍥 ✨ 뮤가 ` + (count + 1) + `번째 도는중  ✨ 🍥`,
